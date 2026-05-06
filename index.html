@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resep Camilan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+    <h2>Resep Camilan</h2>
+    <div>
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('about')">About</a>
+        <a href="#" onclick="showPage('produk')">Produk</a>
+        <a href="#" onclick="showPage('kontak')">Kontak</a>
+    </div>
+</nav>
+
+<!-- HOME -->
+<div id="home" class="page">
+    <div class="container">
+        <img src="chef.png" class="hero-img">
+        <h1>Resep Camilan</h1>
+        <p>Anti Gagal! Panduan lengkap resep camilan teruji dengan tips rahasia.</p>
+        <a href="https://wa.me/6281252368134" class="btn">Beli Sekarang</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<div id="about" class="page" style="display:none;">
+    <div class="container">
+        <img src="chef.png" class="hero-img">
+        <h2>About</h2>
+        <p><b>Nama Usaha:</b> Koleksi Resep Camilan</p>
+        <p>Camilan kini jadi gaya hidup. Kami hadir memberi resep kreatif, praktis, dan variatif agar semua orang bisa membuat camilan sendiri di rumah.</p>
+        
+        <h3>Visi</h3>
+        <p>Semua orang bisa bikin camilan enak sendiri di rumah.</p>
+
+        <h3>Misi</h3>
+        <ul>
+            <li>Simple</li>
+            <li>Creative</li>
+            <li>Economical</li>
+        </ul>
+    </div>
+</div>
+
+<!-- PRODUK -->
+<div id="produk" class="page" style="display:none;">
+    <div class="container">
+        <h2>Produk</h2>
+
+        <input type="text" id="namaProduk" placeholder="Nama Produk">
+        <input type="text" id="deskripsiProduk" placeholder="Deskripsi">
+        <input type="text" id="hargaProduk" placeholder="Harga">
+        <input type="file" id="fotoProduk">
+        <button onclick="tambahProduk()">Tambah Produk</button>
+
+        <div id="listProduk"></div>
+    </div>
+</div>
+
+<!-- KONTAK -->
+<div id="kontak" class="page" style="display:none;">
+    <div class="container">
+        <h2>Kontak</h2>
+        <p>WhatsApp: +62 812-5236-8134</p>
+
+        <form onsubmit="kirimData(event)">
+            <input type="text" id="nama" placeholder="Nama" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Kirim</button>
+        </form>
+
+        <div id="hasil"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
