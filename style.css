@@ -1,110 +1,16 @@
-body {
-    font-family: 'Segoe UI', sans-serif;
-    margin:0;
-    background:#f4f4f4;
+/* HERO / HOME SECTION */
+.hero-section {
+    background: linear-gradient(135deg, #ff7a00, #ffb347);
+    color: white;
+    padding: 60px 20px;
+    border-radius: 0 0 30px 30px;
 }
 
-/* NAVBAR */
-nav {
-    background:#ff7a00;
-    color:white;
-    padding:15px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+.hero-section h1 {
+    font-size: 32px;
 }
 
-nav a {
-    color:white;
-    margin:10px;
-    text-decoration:none;
-    transition:0.3s;
-}
-
-nav a:hover {
-    opacity:0.7;
-}
-
-/* CONTAINER */
-.container {
-    padding:20px;
-    text-align:center;
-    animation:fadeIn 0.5s ease;
-}
-
-/* HERO IMAGE */
-.hero-img {
-    width:160px;
-    margin-bottom:10px;
-    animation:float 3s infinite ease-in-out;
-}
-
-/* CARD PRODUK */
-.card {
-    background:white;
-    padding:15px;
-    margin:15px 0;
-    border-radius:12px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
-    transition:0.3s;
-}
-
-.card:hover {
-    transform:translateY(-5px);
-}
-
-/* GAMBAR PRODUK */
-.card img {
-    width:100%;
-    border-radius:10px;
-}
-
-/* INPUT & BUTTON */
-input, button {
-    padding:10px;
-    margin:5px 0;
-    width:100%;
-    border-radius:8px;
-    border:1px solid #ccc;
-}
-
-/* BUTTON */
-button {
-    background:#ff7a00;
-    color:white;
-    border:none;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-button:hover {
-    background:#e66a00;
-}
-
-/* TOMBOL BELI */
-.btn {
-    display:inline-block;
-    padding:10px 20px;
-    background:#ff7a00;
-    color:white;
-    text-decoration:none;
-    border-radius:8px;
+.hero-section p {
     margin-top:10px;
-    transition:0.3s;
-}
-
-.btn:hover {
-    background:#e66a00;
-}
-
-/* ANIMASI */
-@keyframes fadeIn {
-    from {opacity:0; transform:translateY(10px);}
-    to {opacity:1; transform:translateY(0);}
-}
-
-@keyframes float {
-    0% {transform:translateY(0);}
-    50% {transform:translateY(-10px);}
-    100% {transform:translateY(0);}
+    line-height:1.6;
 }
