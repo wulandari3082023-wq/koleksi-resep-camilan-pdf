@@ -1,16 +1,103 @@
-/* HERO / HOME SECTION */
-.hero-section {
-    background: linear-gradient(135deg, #ff7a00, #ffb347);
-    color: white;
-    padding: 60px 20px;
-    border-radius: 0 0 30px 30px;
+body{
+    font-family:Arial;
+    margin:0;
+    background:#f4f4f4;
 }
 
-.hero-section h1 {
-    font-size: 32px;
+/* NAVBAR */
+nav{
+    background:#ff7a00;
+    color:white;
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
 }
 
-.hero-section p {
-    margin-top:10px;
-    line-height:1.6;
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+}
+
+/* HOME */
+.hero-section{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+.hero-img{
+    width:160px;
+}
+
+.hero-section h1{
+    font-size:40px;
+}
+
+.hero-section h2{
+    color:#ffb347;
+}
+
+.hero-section p{
+    max-width:600px;
+    margin:auto;
+    line-height:1.7;
+}
+
+.info{
+    margin-top:20px;
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    font-weight:bold;
+}
+
+/* BUTTON */
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    background:#ff7a00;
+    color:white;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.wa{
+    margin-top:20px;
+    color:#ccc;
+}
+
+/* CONTAINER */
+.container{
+    padding:30px;
+    text-align:center;
+}
+
+/* ABOUT IMAGE */
+.about-img{
+    width:130px;
+}
+
+/* CARD */
+.card{
+    background:white;
+    padding:15px;
+    margin:15px 0;
+    border-radius:10px;
+}
+
+/* PRODUK IMAGE */
+.card img{
+    width:100%;
+    border-radius:10px;
+}
+
+/* INPUT */
+input, button{
+    width:100%;
+    padding:10px;
+    margin:5px 0;
 }
