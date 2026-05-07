@@ -1,12 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Resep Camilan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Resep Camilan</h2>
+
+    <div>
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('about')">About</a>
+        <a href="#" onclick="showPage('produk')">Produk</a>
+        <a href="#" onclick="showPage('kontak')">Kontak</a>
+    </div>
+</nav>
+
+<!-- ================= HOME ================= -->
 <div id="home" class="page">
+
     <div class="hero-section">
+
         <img src="chef.png" class="hero-img">
-        <h1>Resep Camilan</h1>
+
+        <h1>🍪 RESEP CAMILAN 🍪</h1>
+
+        <h2>Anti Gagal! Resep Camilan Kekinian</h2>
+
         <p>
-        Anti Gagal! Panduan lengkap resep camilan teruji dengan tips rahasia 
+        Camilan lezat dibuat mudah untuk semua orang.
+        Panduan lengkap resep camilan teruji dengan tips rahasia 
         agar hasil masakan selalu sempurna.
         </p>
 
-        <a href="https://wa.me/6281252368134" class="btn">Beli Sekarang</a>
+        <div class="info">
+            <span>⭐ 100+ Resep Favorit</span>
+            <span>🔥 Mudah • Praktis • Anti Gagal</span>
+        </div>
+
+        <a href="https://wa.me/6281252368134" class="btn">
+            BELI SEKARANG
+        </a>
+
+        <p class="wa">
+            📱 +62 812-5236-8134
+        </p>
+
     </div>
 </div>
+
+<!-- ================= ABOUT ================= -->
+<div id="about" class="page" style="display:none;">
+
+    <div class="container">
+
+        <img src="chef.png" class="about-img">
+
+        <h2>About</h2>
+
+        <p><b>Nama Usaha:</b> Koleksi Resep Camilan</p>
+
+        <p>
+        Camilan telah menjadi bagian dari gaya hidup modern.
+        Usaha ini hadir untuk memberikan resep camilan kreatif,
+        praktis, dan variatif agar semua orang bisa membuat
+        camilan sendiri di rumah.
+        </p>
+
+        <h3>Visi</h3>
+        <p>Semua orang bisa bikin camilan enak sendiri di rumah.</p>
+
+        <h3>Misi</h3>
+
+        <ul>
+            <li>Simple: Resep mudah tanpa ribet</li>
+            <li>Creative: Ide menu baru setiap hari</li>
+            <li>Economical: Hemat biaya, rasa juara</li>
+        </ul>
+
+    </div>
+</div>
+
+<!-- ================= PRODUK ================= -->
+<div id="produk" class="page" style="display:none;">
+
+    <div class="container">
+
+        <h2>Produk</h2>
+
+        <input type="text" id="namaProduk" placeholder="Nama Produk">
+
+        <input type="text" id="deskripsiProduk" placeholder="Deskripsi Produk">
+
+        <input type="text" id="hargaProduk" placeholder="Harga Produk">
+
+        <input type="file" id="fotoProduk">
+
+        <button onclick="tambahProduk()">
+            Tambah Produk
+        </button>
+
+        <div id="listProduk"></div>
+
+    </div>
+</div>
+
+<!-- ================= KONTAK ================= -->
+<div id="kontak" class="page" style="display:none;">
+
+    <div class="container">
+
+        <h2>Kontak</h2>
+
+        <p>📱 WhatsApp: +62 812-5236-8134</p>
+
+        <form onsubmit="kirimData(event)">
+
+            <input type="text" id="nama" placeholder="Nama" required>
+
+            <input type="email" id="email" placeholder="Email" required>
+
+            <button type="submit">
+                Kirim
+            </button>
+
+        </form>
+
+        <div id="hasil"></div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
